@@ -289,4 +289,33 @@ public class LinkedListDemoHandler {
         System.out.println("The list contains::");
         list.traverse();
     }
+
+    public static void circularListSplitDemo() {
+        CircularList<Integer> list = new CircularList<>();
+        list.addAtEnd(10);
+        list.addAtEnd(20);
+        list.addAtEnd(30);
+        list.addAtEnd(40);
+//        list.addAtEnd(50);
+//        list.addAtEnd(60);
+
+        System.out.println("The list contains::");
+        list.traverse();
+
+        list.splitList();
+        System.out.println("Spliting the circular list into two halves:: ");
+        list.traverse();
+    }
+
+    public static void sortedInsertDemo() {
+        CircularList<Integer> list = new CircularList<>();
+        list.sortedInsert(70);
+        list.sortedInsert(20);
+        list.sortedInsert(10);
+        list.sortedInsert(40);
+        list.sortedInsert(80);
+
+        System.out.println("The list contains::");
+        list.traverse();
+    }
 }
