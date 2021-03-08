@@ -41,7 +41,7 @@ public class MatrixDemoHandler {
         MatrixUtils.printMatrix(arr, arr.length, arr[0].length);
     }
 
-    public static void uniqueRowMatrix() {
+    public static void uniqueRowMatrixDemo() {
         int[][] arr = { { 0, 1, 0, 0, 1 },
                 { 1, 0, 1, 1, 0 },
                 { 0, 1, 0, 0, 1 },
