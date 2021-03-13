@@ -1,6 +1,7 @@
 package com.aninda.datastructure;
 
 import com.aninda.datastructure.linkedlist.CircularList;
+import com.aninda.datastructure.linkedlist.DoublyList;
 import com.aninda.datastructure.linkedlist.LinkedList;
 
 public class LinkedListDemoHandler {
@@ -316,6 +317,46 @@ public class LinkedListDemoHandler {
         list.sortedInsert(80);
 
         System.out.println("The list contains::");
+        list.traverse();
+    }
+
+    public static void doublyListAddAtFrontDemo() {
+        DoublyList<Integer> list = new DoublyList<>();
+
+        list.addAtFront(10);
+        list.addAtFront(20);
+        list.addAtFront(30);
+        list.addAtFront(40);
+        list.addAtFront(50);
+
+        list.traverse();
+    }
+    public static void doublyListAddAtEndDemo() {
+        DoublyList<Integer> list = new DoublyList<>();
+
+        list.addAtEnd(10);
+        list.addAtEnd(20);
+        list.addAtEnd(30);
+        list.addAtEnd(40);
+        list.addAtEnd(50);
+
+        list.traverse();
+    }
+
+    public static void doublyListReverseDemo() {
+        DoublyList<Integer> list = new DoublyList<>();
+
+        list.addAtEnd(10);
+        list.addAtEnd(20);
+        list.addAtEnd(30);
+        list.addAtEnd(40);
+        list.addAtEnd(50);
+
+        System.out.println("The original Array:: ");
+        list.traverse();
+
+        System.out.println("The reversed Array:: ");
+        list.reverse();
         list.traverse();
     }
 }
